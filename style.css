@@ -1,0 +1,93 @@
+.container{
+    margin: 100px auto 0 auto;
+    padding-top: 100px;
+    width: 300px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.inputSearch{
+    width: 200px;
+    height: 20px;
+}
+
+.complitMenu{
+    margin:0 auto;
+    background-color: grey;
+    width:205px;
+    min-height: 150px;
+    border:1px solid black;
+}
+
+.complitItem{
+    min-height: 30px;
+    width: 200px;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-left: 5px;;
+}
+
+.complitItem:hover{
+    background-color: whitesmoke;
+}
+
+.resultsItem{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+
+.resultsInfo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top:5px;
+    padding-left:5px;
+}
+
+.results__wrapper{
+    width: 200px;
+    min-height: 180px;
+    margin-bottom: 100px;
+    background: pink;
+    border: 1px solid black;
+}
+
+.resultsDelete {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    opacity: 0.2;
+    cursor: pointer;
+    transition: opacity ease 0.2s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.resultsDelete::before,
+.resultsDelete::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    right: 5px;
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: darkred;
+}
+
+.resultsDelete::before {
+    transform: rotate(45deg);
+}
+
+.resultsDelete::after {
+    transform: rotate(-45deg);
+}
+
